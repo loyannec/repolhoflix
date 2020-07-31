@@ -1,15 +1,16 @@
 * {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 :root {
-  --primary: #2A7AE4;
-  --black: #000000;
+  --primary: #AFC592;
+  --black: #414F35;
   --blackLighter: #9E9E9E;
+  --grayDark: #AFC592;
   --grayLight: #F5F5F5;
   --grayMedium: #e5e5e5;
-  --white: #FFFFFF;
+  --white: #FBF7DB;
   --frontEnd: #6BD1FF;
   --backEnd: #00C86F;
 }

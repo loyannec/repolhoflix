@@ -1,19 +1,24 @@
 import React from 'react';
+import styled from 'styled-components';
 import Menu from './components/Menu'
 import initialData from './data/initial_data.json';
 import BannerMain from './components/BannerMain';
 import Carousel from './components/Carousel';
 import Footer from './components/Footer';
 
+const AppWrapper = styled.div`
+    background: var(--grayDark);
+`;
+
 function App() {
     return (
-        <div style={{ background: "#141414" }}>
+        <AppWrapper>
             <Menu />
 
             <BannerMain
                 videoTitle={initialData.categories[0].videos[0].title}
                 url={initialData.categories[0].videos[0].url}
-                videoDescription={"O que é Front-End?"}
+                videoDescription={"Imersão Verde"}
             />
 
             <Carousel
@@ -36,18 +41,8 @@ function App() {
                 category={initialData.categories[3]}
             />
 
-            <Carousel
-                ignoreFirstVideo
-                category={initialData.categories[4]}
-            />
-
-            <Carousel
-                ignoreFirstVideo
-                category={initialData.categories[5]}
-            />
-
             <Footer />
-        </div>
+        </AppWrapper>
     );
 }
 
